@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png" type="image/png">
+    <meta property="og:image" content="amongus.png" />
+    <meta name="description" content="A search engine for">
+    <meta name="keywords" content="Susearch">
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuSearch | A search engine for</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: url(bg.svg);
+            text-align: center;
+            padding-top: 30vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: all 0.5s;
+            color: rgb(36, 36, 36);
+            font-size: 20px;
+        }
+        #search{
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            font-size: 20px;
+            width:70vw;
+            height:60px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.199);
+            outline: none;
+            backdrop-filter: blur(15px);
+            border: 0.5px solid white;
+            margin-bottom: 70px;
+            color: rgb(31, 31, 31);
+        }
+        #search:focus{
+            background-color: rgba(255, 255, 255, 0.486);
+            backdrop-filter: blur(10px);
+            border: 2px solid white;
+        }
+        #content{
+            border: 0.5px solid white;
+            width:55vw;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.199);
+            outline: none;
+            backdrop-filter: blur(15px);
+            border: none;
+            margin: auto;
+        }
+        .results{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 0.5px solid white;
+        }
+        
+        @media only screen and (max-width: 600px) {
+        #content{
+            width:100%;
+        }
+        #search{
+            width:100%;
+        }
+       }       
+    </style>
+
+
+</head>
+<body>
+    <input type="search" name="" placeholder="🔍Search" onchange="searcht()" id="search">
+   <div id="content"></div>
+<script src="main.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
