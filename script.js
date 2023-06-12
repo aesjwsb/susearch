@@ -1,4 +1,4 @@
-
+alert("this website contains bad words");
 function searcht(){
     var text=document.getElementById("search").value;
     text=text.toLowerCase();
