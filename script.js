@@ -1,8 +1,8 @@
 
-
 function searcht(){
     var text=document.getElementById("search").value;
     text=text.toLowerCase();
+    document.getElementById("content").innerHTML="";
     for(let i=0;i < database.length ; i++){
         let result = database[i].match(text);
        if(result == null  ){
@@ -13,7 +13,7 @@ function searcht(){
     }
 }
 function createEle(a){
-    document.getElementById("content").innerHTML="";
+   
     var ele = document.createElement("div");
     ele.innerHTML=database[ a ];
     ele.classList.add("results");
