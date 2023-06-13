@@ -32,7 +32,7 @@ function createEle(a){
     var ele = document.createElement("div");
     ele.innerHTML=database[ a ];
     ele.classList.add("results");
-    ele.ondblclick=function() {location.assign("https://searx.garudalinux.org/search?q="+database[a]);}
+    ele.ondblclick=function() {location.assign("https://searx.garudalinux.org/search?q="+database[a]+"+meaning");}
     ele.onclick= function () {copyt(database[a]);}
     document.getElementById("content").appendChild(ele);
 }
